@@ -1,0 +1,116 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ryan Johnson's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/13ff5a0d15.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <!-- -------- navigation -------- -->
+    <nav class="nav">
+      <div class="items-left">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+      <div class="items-right">
+        <ul>
+          <li><a href="#portfolio-horizontal">Portfolio</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <h1 id="title-name">Ryan Johnson</h1>
+    <div class="fullscreen"></div>
+    <div class="scroll-trigger"></div>
+
+    <!-- -------- main -------- -->
+    <main>
+      <!-- ----- about ------- -->
+      <section id="about">
+        <div class="row">
+          <div class="about-wrapper">
+            <h2 class="background-text">ABOUT ME</h2>
+            <div class="about-col-desc">
+              <h2 class="heading">Computer Science @ Carleton University</h2>
+              Computer science student, passionate about building practical
+              software that prioritizes user security and a smooth, user
+              experience.
+            </div>
+          </div>
+          <div class="about-col-img1">
+            <img src="images/headshot.jpg" />
+          </div>
+        </div>
+      </section>
+
+      <!-- ----- portfolio ------- -->
+      <section id="portfolio-horizontal">
+        <div class="project">
+          <div class="row">
+            <div class="project-col-desc">
+              <h2 class="heading">Playlist Generator</h2>
+              <h3 class="project-subtitle">Javascript | HTML | CSS</h3>
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </div>
+            <div class="project-col-img1">
+              <img
+                src="images/iphone-outline1.jpg"
+                alt="Project interface on phone"
+              />
+            </div>
+            <div class="project-col-img2">
+              <img
+                src="images/iphone-outline2.jpg"
+                alt="Project interface on phone"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="project">
+          <div class="row">
+            <div class="project-col-desc">
+              <h2 class="heading">Network Traffic Analyzer</h2>
+              <h3 class="project-subtitle">Python | HTML | CSS</h3>
+              ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+              aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur.
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <p>
+            <a href="mailto:ryandjohnson08@hotmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+            |
+            <a href="https://github.com/TheRyanStudio" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            |
+            <a
+              href="https://www.linkedin.com/in/ryan-johnson-cs/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </p>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Sacramento&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans MT", sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* -------- navigation -------- */
+#title-name {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 1em;
+  z-index: 2;
+  font-style: italic;
+  font-family: "Sacramento", cursive;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0 4em;
+  z-index: 2;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+/*Adjust about anchor link*/
+#about {
+  scroll-margin-top: 120px;
+}
+#portfolio-horizontal {
+  display: flex;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  position: relative;
+}
+
+.nav li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+.nav li a:hover::after {
+  width: 100%;
+}
+
+.fullscreen {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.scroll-trigger {
+  width: 100%;
+  height: 40vh;
+}
+
+/* ----------  main ---------- */
+.main {
+  width: 100%;
+  height: 100vh;
+}
+
+#portfolio-horizontal .project {
+  height: 100vh;
+  width: 100vw;
+  flex-shrink: 0;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.project-subtitle {
+  font-size: 20px;
+  font-style: italic;
+  color: gray;
+}
+
+.about-wrapper {
+  position: relative;
+  padding-left: 10%;
+  padding-right: 7%;
+}
+
+.background-text {
+  position: absolute;
+  z-index: 1;
+  color: black;
+  opacity: 0.1;
+  font-size: 100px;
+  bottom: 0%;
+}
+
+.about-col-desc {
+  position: relative;
+  z-index: 1;
+  font-size: 27px;
+  text-align: center;
+}
+
+.about-col-img1 img {
+  max-width: 60%;
+  border-radius: 50%;
+}
+
+#horizontal .project {
+  display: flex;
+  flex-shrink: 0;
+}
+
+.project {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+}
+
+.project-col-desc {
+  padding-left: 3%;
+  width: 40%;
+  font-size: 25px;
+}
+
+.project-col-img1 img,
+.project-col-img2 img {
+  max-width: 75%;
+}
+
+/* ----------  footer ---------- */
+.footer {
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #eee;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
